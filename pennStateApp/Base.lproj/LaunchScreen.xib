@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Copyright (c) 2014 softwaremerchant. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular" misplaced="YES">
+                        <rect key="frame" x="20" y="451" width="441" height="10"/>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" misplaced="YES" image="Screen Shot 2014-10-07 at 2.52.00 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="20N-th-oNa">
+                    <rect key="frame" x="53" y="243" width="388" height="103"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="103" id="5e1-Tk-PMv"/>
+                        <constraint firstAttribute="width" secondItem="20N-th-oNa" secondAttribute="height" multiplier="35:11" id="NRB-Ix-oa3"/>
+                        <constraint firstAttribute="width" secondItem="20N-th-oNa" secondAttribute="height" multiplier="388:103" id="clh-hl-5ZQ"/>
+                        <constraint firstAttribute="width" constant="275" id="oGk-ED-72x"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5e1-Tk-PMv"/>
+                            <exclude reference="NRB-Ix-oa3"/>
+                            <exclude reference="oGk-ED-72x"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="180" y="217" width="259" height="55"/>
+                        <mask key="constraints">
+                            <exclude reference="clh-hl-5ZQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="NRB-Ix-oa3"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2014-10-07 at 2.24.49 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Jq-1u-okR">
+                    <rect key="frame" x="120" y="51" width="240" height="156"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2Jq-1u-okR" secondAttribute="height" multiplier="20:13" id="Ma6-ss-F1A"/>
+                        <constraint firstAttribute="width" secondItem="2Jq-1u-okR" secondAttribute="height" multiplier="99:76" id="WCW-TB-d7U"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="WCW-TB-d7U"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="44" y="191" width="128" height="98"/>
+                        <mask key="constraints">
+                            <exclude reference="Ma6-ss-F1A"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="WCW-TB-d7U"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="2Jq-1u-okR" secondAttribute="centerX" id="0d8-g6-cyi"/>
+                <constraint firstAttribute="trailing" secondItem="20N-th-oNa" secondAttribute="trailing" constant="38" id="2Xh-Vd-Z5O"/>
+                <constraint firstAttribute="trailing" secondItem="20N-th-oNa" secondAttribute="trailing" constant="39" id="3mj-cl-q3o">
+                    <variation key="heightClass=regular" constant="41"/>
+                </constraint>
+                <constraint firstItem="20N-th-oNa" firstAttribute="leading" secondItem="2Jq-1u-okR" secondAttribute="trailing" constant="8" id="51x-qY-k0w"/>
+                <constraint firstItem="20N-th-oNa" firstAttribute="height" secondItem="2Jq-1u-okR" secondAttribute="height" id="6ZQ-bH-hEb"/>
+                <constraint firstAttribute="centerY" secondItem="2Jq-1u-okR" secondAttribute="centerY" id="DeC-hQ-g5f"/>
+                <constraint firstItem="2Jq-1u-okR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="JUT-P2-API"/>
+                <constraint firstAttribute="centerX" secondItem="20N-th-oNa" secondAttribute="centerX" id="JuJ-MK-bAr"/>
+                <constraint firstAttribute="centerX" secondItem="20N-th-oNa" secondAttribute="centerX" id="KCL-T1-d1I"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l">
+                    <variation key="heightClass=regular" constant="19"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="2Jq-1u-okR" secondAttribute="trailing" constant="120" id="LaI-A5-hVA"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstItem="20N-th-oNa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="54" id="Mzv-g1-zHt"/>
+                <constraint firstAttribute="centerY" secondItem="2Jq-1u-okR" secondAttribute="centerY" id="QtO-S5-l3E"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="TQn-W2-JWo"/>
+                <constraint firstAttribute="centerX" secondItem="2Jq-1u-okR" secondAttribute="centerX" id="Ykf-Ah-dDz"/>
+                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstAttribute="centerY" secondItem="20N-th-oNa" secondAttribute="centerY" constant="-100" id="ZVl-Tj-oZw"/>
+                <constraint firstItem="20N-th-oNa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="53" id="ZYJ-lz-fbC">
+                    <variation key="heightClass=regular" constant="51"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" constant="19" id="biY-XI-BiZ"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="20N-th-oNa" secondAttribute="bottom" constant="159" id="cBK-MC-790">
+                    <variation key="heightClass=regular" constant="87"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="20N-th-oNa" secondAttribute="trailing" constant="100" id="gtS-iF-lRH"/>
+                <constraint firstAttribute="centerY" secondItem="20N-th-oNa" secondAttribute="centerY" id="iJg-BM-KUC">
+                    <variation key="heightClass=regular" constant="-72.5"/>
+                </constraint>
+                <constraint firstItem="2Jq-1u-okR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="120" id="nXX-H7-Msh"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="pIv-rf-DUl">
+                    <variation key="heightClass=regular" constant="19"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="20N-th-oNa" secondAttribute="centerY" id="uo5-So-mYk"/>
+                <constraint firstItem="20N-th-oNa" firstAttribute="top" secondItem="2Jq-1u-okR" secondAttribute="bottom" constant="36" id="zFz-J9-6CE">
+                    <variation key="heightClass=regular" constant="46"/>
+                </constraint>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0d8-g6-cyi"/>
+                    <exclude reference="DeC-hQ-g5f"/>
+                    <exclude reference="JUT-P2-API"/>
+                    <exclude reference="QtO-S5-l3E"/>
+                    <exclude reference="Ykf-Ah-dDz"/>
+                    <exclude reference="2Xh-Vd-Z5O"/>
+                    <exclude reference="51x-qY-k0w"/>
+                    <exclude reference="6ZQ-bH-hEb"/>
+                    <exclude reference="JuJ-MK-bAr"/>
+                    <exclude reference="KCL-T1-d1I"/>
+                    <exclude reference="Mzv-g1-zHt"/>
+                    <exclude reference="ZVl-Tj-oZw"/>
+                    <exclude reference="gtS-iF-lRH"/>
+                    <exclude reference="uo5-So-mYk"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="constraints">
+                    <exclude reference="LaI-A5-hVA"/>
+                    <exclude reference="nXX-H7-Msh"/>
+                    <exclude reference="3mj-cl-q3o"/>
+                    <exclude reference="ZYJ-lz-fbC"/>
+                    <exclude reference="iJg-BM-KUC"/>
+                    <exclude reference="zFz-J9-6CE"/>
+                    <exclude reference="cBK-MC-790"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <exclude reference="DeC-hQ-g5f"/>
+                    <include reference="JUT-P2-API"/>
+                    <include reference="QtO-S5-l3E"/>
+                    <exclude reference="Ykf-Ah-dDz"/>
+                    <include reference="51x-qY-k0w"/>
+                    <include reference="6ZQ-bH-hEb"/>
+                    <include reference="gtS-iF-lRH"/>
+                    <include reference="uo5-So-mYk"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="562" y="454"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Screen Shot 2014-10-07 at 2.24.49 PM.png" width="88" height="74"/>
+        <image name="Screen Shot 2014-10-07 at 2.52.00 PM.png" width="117" height="42"/>
+    </resources>
+</document>
