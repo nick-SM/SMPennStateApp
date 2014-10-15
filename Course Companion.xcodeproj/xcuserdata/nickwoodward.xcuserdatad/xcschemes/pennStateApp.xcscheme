@@ -17,7 +17,7 @@
                BlueprintIdentifier = "34B8D1E219E586DA00C9141B"
                BuildableName = "pennStateApp.app"
                BlueprintName = "pennStateApp"
-               ReferencedContainer = "container:pennStateApp.xcodeproj">
+               ReferencedContainer = "container:Course Companion.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "34B8D1FB19E586DA00C9141B"
                BuildableName = "pennStateAppTests.xctest"
                BlueprintName = "pennStateAppTests"
-               ReferencedContainer = "container:pennStateApp.xcodeproj">
+               ReferencedContainer = "container:Course Companion.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "34B8D1FB19E586DA00C9141B"
                BuildableName = "pennStateAppTests.xctest"
                BlueprintName = "pennStateAppTests"
-               ReferencedContainer = "container:pennStateApp.xcodeproj">
+               ReferencedContainer = "container:Course Companion.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "34B8D1E219E586DA00C9141B"
             BuildableName = "pennStateApp.app"
             BlueprintName = "pennStateApp"
-            ReferencedContainer = "container:pennStateApp.xcodeproj">
+            ReferencedContainer = "container:Course Companion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "34B8D1E219E586DA00C9141B"
             BuildableName = "pennStateApp.app"
             BlueprintName = "pennStateApp"
-            ReferencedContainer = "container:pennStateApp.xcodeproj">
+            ReferencedContainer = "container:Course Companion.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,7 +96,7 @@
             BlueprintIdentifier = "34B8D1E219E586DA00C9141B"
             BuildableName = "pennStateApp.app"
             BlueprintName = "pennStateApp"
-            ReferencedContainer = "container:pennStateApp.xcodeproj">
+            ReferencedContainer = "container:Course Companion.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

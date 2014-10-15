@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.lblClassName.text = [@"WELCOME TO IST " stringByAppendingString:self.className];
+    
     for (UIImageView *iv in self.quadImages) {
         iv.userInteractionEnabled = YES;
     }
@@ -43,6 +45,7 @@
         tvc.navigationItem.title = @"Corporate Resources";
     }
 }
+
 - (void)imageTouched:(SMQuadImageView*)qiv{
     //NSLog(@"imageTouched");
     //NSLog(@"%i",qiv.tag);
@@ -51,4 +54,15 @@
     }
 }
 
+- (IBAction)quadButtonPressed:(UIButton *)sender {
+    if([sender.titleLabel.text isEqualToString:@"Tutorials"]){
+        [self imageTouched:self.quadImages[0]];
+    }
+    else if ([sender.titleLabel.text isEqualToString:@"Course Materials"]){
+        [self imageTouched:self.quadImages[1]];
+    }
+    else if ([sender.titleLabel.text isEqualToString:@"Corporate Resources"]){
+        [self imageTouched:self.quadImages[2]];
+    }
+}
 @end

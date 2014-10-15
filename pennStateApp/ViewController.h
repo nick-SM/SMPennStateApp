@@ -11,8 +11,10 @@
 
 @interface ViewController : UIViewController
 - (void)imageTouched:(SMQuadImageView*)qiv;
+@property (weak, nonatomic) IBOutlet UILabel *lblClassName;
 
 @property (strong, nonatomic) IBOutletCollection(SMQuadImageView) NSArray *quadImages;
-
+- (IBAction)quadButtonPressed:(UIButton *)sender;
+@property NSString *className;
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "SMTable.h"
+#import "SMPDFViewer.h"
 
 @interface SMTable ()
 
@@ -14,17 +15,48 @@
 
 @implementation SMTable{
     MPMoviePlayerController *mpc;
+    UIImage *cellImg;
+    NSURL *url;
+    NSURL *pdfURL;
+    NSMutableArray *tableArray;
+    NSMutableDictionary *corporateDict;
+    NSDictionary *tableDict;
+    SMPDFViewer *destination;
+    NSArray *sectionHeaders;
+    NSMutableArray *sectionCounts;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     
-    //self.navigationItem.title = @"TESTING 345";
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    if([self.navigationItem.title isEqualToString:@"Tutorials"]){
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Tutorials" ofType:@"plist"];
+        tableArray = [[NSMutableArray alloc] initWithContentsOfFile:filePath];
+    }
+    else if([self.navigationItem.title isEqualToString:@"Corporate Resources"]){
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"CorporateResources" ofType:@"plist"];
+        tableDict = [[NSDictionary alloc] initWithContentsOfFile:filePath];
+        tableArray = [NSMutableArray new];
+        sectionCounts = [[NSMutableArray alloc]init];
+        corporateDict = [NSMutableDictionary new];
+        sectionHeaders = [tableDict allKeys];
+        
+        for(int i =0;i<[sectionHeaders count];i++){
+            NSDictionary *dict = tableDict[sectionHeaders[i]];
+            NSArray *tableElements = [dict allKeys];
+            NSInteger temp = [tableElements count];
+            [sectionCounts addObject:[[NSNumber alloc]initWithInteger:temp]];
+            [corporateDict addEntriesFromDictionary:dict];
+            for(int j=0;j<[tableElements count];j++){
+                [tableArray addObject:tableElements[j]];
+            }
+            
+        }
+    }
+    else{
+        tableArray = [[NSMutableArray alloc]initWithObjects:@"Syllabus",@"Homework 1",@"Homework 2",@"Homework 3", nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,49 +64,103 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    destination = [segue destinationViewController];
+    //NSURL *url2 = [NSURL URLWithString:@"http://www.softwaremerchant.com/welcomepacket/W-4%202014.pdf"];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
+    if([self.navigationItem.title isEqualToString:@"Corporate Resources"]){
+        return [sectionHeaders count];
+    }
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 1;
+    if([self.navigationItem.title isEqualToString:@"Corporate Resources"]){
+        NSNumber *num = sectionCounts[section];
+        return [num integerValue];
+    }
+    return [tableArray count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tutorial" forIndexPath:indexPath];
+    UITableViewCell *cell;
     
-    cell.textLabel.text = @"Example video";
-    // Configure the cell...
+    if([self.navigationItem.title isEqualToString:@"Tutorials"]){
+        cell = [tableView dequeueReusableCellWithIdentifier:@"tutorial" forIndexPath:indexPath];
+        UILabel *cellLabel = (UILabel*)[cell.contentView viewWithTag:1];
+        
+        NSDictionary *cellUrlPair = tableArray[indexPath.row];
+        NSArray *key = [cellUrlPair allKeys];
+        cellLabel.text = key[0];
+        return cell;
+
+    }
+    else if([self.navigationItem.title isEqualToString:@"Corporate Resources"]){
+        cell = [tableView dequeueReusableCellWithIdentifier:@"other" forIndexPath:indexPath];
+        UILabel *cellLabel = (UILabel*)[cell.contentView viewWithTag:1];
+        int offset = 0;
+        for(int i=0;i<indexPath.section;i++){
+            NSNumber *num = sectionCounts[i];
+            offset = offset + [num intValue];
+        }
+        //NSLog(@"%ld",(long)indexPath.section);
+        cellLabel.text = tableArray[indexPath.row+offset];
+    }
+    else{
+        cell = [tableView dequeueReusableCellWithIdentifier:@"course" forIndexPath:indexPath];
+        UILabel *cellLabel = (UILabel*)[cell.contentView viewWithTag:1];
+        cellLabel.text = tableArray[indexPath.row];
+    }
+    
     
     return cell;
+
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [sectionHeaders objectAtIndex:section];
+}
+
+-(float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if([self.navigationItem.title isEqualToString:@"Tutorials"]){
+        return 90.0;
+    }
+    else{
+        return 60.0;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"Selected");
-    NSURL *url=[NSURL URLWithString:@"http://www.softwaremerchant.com/stream/chapter3/prog_index.m3u8"];
-    mpc = [[MPMoviePlayerController alloc] initWithContentURL:url];
-    [mpc.view setFrame:CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height)];
-    
-    
-    [self.view addSubview:mpc.view];
-    //[MPMoviePlayerController setScalingMode:MPMovieScalingModeFill];
-    [mpc setScalingMode:MPMovieScalingModeAspectFit];
-    
-    //mpc.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
-    mpc.movieSourceType = MPMovieSourceTypeStreaming;
-    mpc.controlStyle = MPMovieControlStyleNone;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(MPMoviePlayerDidExitFullscreen:) name:MPMoviePlayerDidExitFullscreenNotification object:nil];
+    if([self.navigationItem.title isEqualToString:@"Tutorials"]){
+        NSDictionary *cellUrlPair = tableArray[indexPath.row];
+        NSArray *key = [cellUrlPair allKeys];
+        
+        url=[NSURL URLWithString:cellUrlPair[key[0]]];
+        mpc = [[MPMoviePlayerController alloc] initWithContentURL:url];
+        
+        [mpc.view setFrame:CGRectMake(10,10,0.0,0.0)];
+        [self.view addSubview:mpc.view];
+        [mpc setScalingMode:MPMovieScalingModeAspectFit];
+        mpc.movieSourceType = MPMovieSourceTypeStreaming;
+        mpc.controlStyle = MPMovieControlStyleNone;
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(MPMoviePlayerDidExitFullscreen:) name:MPMoviePlayerDidExitFullscreenNotification object:nil];
 
-    [mpc play];
-    mpc.controlStyle = MPMovieControlStyleFullscreen;
-    mpc.fullscreen = YES;
-    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieDidFinish:) name:MPMoviePlayerPlaybackDidFinishNotification object:self.mov];
+        [mpc play];
+        mpc.controlStyle = MPMovieControlStyleFullscreen;
+        mpc.fullscreen = YES;
+    }
+    pdfURL = [NSURL URLWithString:corporateDict[tableArray[indexPath.row]]];
+    destination.url = pdfURL;
 }
 
 

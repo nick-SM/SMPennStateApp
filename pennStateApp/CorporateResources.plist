@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sample Problem Statements</key>
+	<dict>
+		<key>AT&amp;T Problem Statement</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/attproblemstatement.pdf</string>
+		<key>PennDot Problem Statement</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/penndotproblemstatement.pdf</string>
+	</dict>
+	<key>Sample Use-Case</key>
+	<dict>
+		<key>Annotated Wire-Frame</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/Annotated%20WireFrame%20SM.pdf</string>
+		<key>Home Page Use-Case</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/BoeingAeroMagazineCasestudy.pdf</string>
+	</dict>
+	<key>Sample Case Studies</key>
+	<dict>
+		<key>T-Mobile Tapestry</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/TMobileTapestry.pdf</string>
+		<key>Boeing Aero Magazine</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/homepage-usecase.pdf</string>
+	</dict>
+	<key>Sample Agile Sprint Documentation</key>
+	<dict>
+		<key>Internal App Sprint Document</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/sprint1-%20internalapp.pdf</string>
+	</dict>
+</dict>
+</plist>

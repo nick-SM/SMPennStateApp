@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		349B7D4819EEC8190083EB5A /* SMStartPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 349B7D4719EEC8190083EB5A /* SMStartPage.m */; };
 		34B8D1E919E586DA00C9141B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8D1E819E586DA00C9141B /* main.m */; };
 		34B8D1EC19E586DA00C9141B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8D1EB19E586DA00C9141B /* AppDelegate.m */; };
 		34B8D1EF19E586DA00C9141B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8D1EE19E586DA00C9141B /* ViewController.m */; };
@@ -32,6 +33,19 @@
 		34D8B7E419EAFF5E00C1FCF2 /* SMQuadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D8B7E319EAFF5E00C1FCF2 /* SMQuadImageView.m */; };
 		34D8B7E719EB084700C1FCF2 /* SMTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D8B7E619EB084700C1FCF2 /* SMTable.m */; };
 		34D8B7E919EB0B2100C1FCF2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D8B7E819EB0B2100C1FCF2 /* MediaPlayer.framework */; };
+		34D8B7EB19EC4AF300C1FCF2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D8B7EA19EC4AF300C1FCF2 /* CoreMedia.framework */; };
+		34D8B7ED19EC4AF700C1FCF2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D8B7EC19EC4AF700C1FCF2 /* AVFoundation.framework */; };
+		34D8B7EF19EC5E4300C1FCF2 /* windows-media-player-play-button-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D8B7EE19EC5E4300C1FCF2 /* windows-media-player-play-button-hi.png */; };
+		34D8B7F419EC687D00C1FCF2 /* quad-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D8B7F019EC687D00C1FCF2 /* quad-2.png */; };
+		34D8B7F519EC687D00C1FCF2 /* quad1.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D8B7F119EC687D00C1FCF2 /* quad1.png */; };
+		34D8B7F619EC687D00C1FCF2 /* quad3.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D8B7F219EC687D00C1FCF2 /* quad3.png */; };
+		34D8B7F719EC687D00C1FCF2 /* quad4.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D8B7F319EC687D00C1FCF2 /* quad4.png */; };
+		34E10EDA19EC6FCE005C3F26 /* SMPDFViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E10ED919EC6FCE005C3F26 /* SMPDFViewer.m */; };
+		34E10EDC19ED7DDC005C3F26 /* Tutorials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34E10EDB19ED7DDC005C3F26 /* Tutorials.plist */; };
+		34E10EDE19EDA5DC005C3F26 /* CorporateResources.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34E10EDD19EDA5DC005C3F26 /* CorporateResources.plist */; };
+		34E10EE019EDC37B005C3F26 /* imageIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34E10EDF19EDC37B005C3F26 /* imageIcon.jpg */; };
+		34E10EE219EDC3EF005C3F26 /* ImageIcon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E10EE119EDC3EF005C3F26 /* ImageIcon-58.png */; };
+		34FB144C19EEB610000FA5F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FB144B19EEB610000FA5F5 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		349B7D4619EEC8190083EB5A /* SMStartPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStartPage.h; sourceTree = "<group>"; };
+		349B7D4719EEC8190083EB5A /* SMStartPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStartPage.m; sourceTree = "<group>"; };
 		34B8D1E319E586DA00C9141B /* pennStateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pennStateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B8D1E719E586DA00C9141B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34B8D1E819E586DA00C9141B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +94,20 @@
 		34D8B7E519EB084700C1FCF2 /* SMTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTable.h; sourceTree = "<group>"; };
 		34D8B7E619EB084700C1FCF2 /* SMTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTable.m; sourceTree = "<group>"; };
 		34D8B7E819EB0B2100C1FCF2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		34D8B7EA19EC4AF300C1FCF2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		34D8B7EC19EC4AF700C1FCF2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		34D8B7EE19EC5E4300C1FCF2 /* windows-media-player-play-button-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "windows-media-player-play-button-hi.png"; path = "Archive/windows-media-player-play-button-hi.png"; sourceTree = SOURCE_ROOT; };
+		34D8B7F019EC687D00C1FCF2 /* quad-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "quad-2.png"; path = "Archive/quad-2.png"; sourceTree = SOURCE_ROOT; };
+		34D8B7F119EC687D00C1FCF2 /* quad1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quad1.png; path = Archive/quad1.png; sourceTree = SOURCE_ROOT; };
+		34D8B7F219EC687D00C1FCF2 /* quad3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quad3.png; path = Archive/quad3.png; sourceTree = SOURCE_ROOT; };
+		34D8B7F319EC687D00C1FCF2 /* quad4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quad4.png; path = Archive/quad4.png; sourceTree = SOURCE_ROOT; };
+		34E10ED819EC6FCE005C3F26 /* SMPDFViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMPDFViewer.h; path = ../SMPDFViewer.h; sourceTree = "<group>"; };
+		34E10ED919EC6FCE005C3F26 /* SMPDFViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMPDFViewer.m; path = ../SMPDFViewer.m; sourceTree = "<group>"; };
+		34E10EDB19ED7DDC005C3F26 /* Tutorials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tutorials.plist; sourceTree = "<group>"; };
+		34E10EDD19EDA5DC005C3F26 /* CorporateResources.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CorporateResources.plist; sourceTree = "<group>"; };
+		34E10EDF19EDC37B005C3F26 /* imageIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = imageIcon.jpg; path = Archive/imageIcon.jpg; sourceTree = SOURCE_ROOT; };
+		34E10EE119EDC3EF005C3F26 /* ImageIcon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ImageIcon-58.png"; path = "Archive/ImageIcon-58.png"; sourceTree = SOURCE_ROOT; };
+		34FB144B19EEB610000FA5F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +115,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FB144C19EEB610000FA5F5 /* UIKit.framework in Frameworks */,
+				34D8B7ED19EC4AF700C1FCF2 /* AVFoundation.framework in Frameworks */,
+				34D8B7EB19EC4AF300C1FCF2 /* CoreMedia.framework in Frameworks */,
 				34D8B7E919EB0B2100C1FCF2 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +135,9 @@
 		34B8D1DA19E586DA00C9141B = {
 			isa = PBXGroup;
 			children = (
+				34FB144B19EEB610000FA5F5 /* UIKit.framework */,
+				34D8B7EC19EC4AF700C1FCF2 /* AVFoundation.framework */,
+				34D8B7EA19EC4AF300C1FCF2 /* CoreMedia.framework */,
 				34D8B7E819EB0B2100C1FCF2 /* MediaPlayer.framework */,
 				34D8B7C019EAFA8600C1FCF2 /* Archive */,
 				34B8D1E519E586DA00C9141B /* pennStateApp */,
@@ -122,16 +158,29 @@
 		34B8D1E519E586DA00C9141B /* pennStateApp */ = {
 			isa = PBXGroup;
 			children = (
+				34E10ED919EC6FCE005C3F26 /* SMPDFViewer.m */,
+				34E10ED819EC6FCE005C3F26 /* SMPDFViewer.h */,
 				34B8D1EA19E586DA00C9141B /* AppDelegate.h */,
 				34B8D1EB19E586DA00C9141B /* AppDelegate.m */,
 				34B8D1ED19E586DA00C9141B /* ViewController.h */,
 				34B8D1EE19E586DA00C9141B /* ViewController.m */,
 				34B8D1F019E586DA00C9141B /* Main.storyboard */,
+				349B7D4619EEC8190083EB5A /* SMStartPage.h */,
+				349B7D4719EEC8190083EB5A /* SMStartPage.m */,
+				34D8B7F019EC687D00C1FCF2 /* quad-2.png */,
+				34D8B7F119EC687D00C1FCF2 /* quad1.png */,
+				34D8B7F219EC687D00C1FCF2 /* quad3.png */,
+				34D8B7F319EC687D00C1FCF2 /* quad4.png */,
+				34D8B7EE19EC5E4300C1FCF2 /* windows-media-player-play-button-hi.png */,
 				34D8B7E519EB084700C1FCF2 /* SMTable.h */,
 				34D8B7E619EB084700C1FCF2 /* SMTable.m */,
+				34E10EDB19ED7DDC005C3F26 /* Tutorials.plist */,
+				34E10EDD19EDA5DC005C3F26 /* CorporateResources.plist */,
 				34D8B7E219EAFF5E00C1FCF2 /* SMQuadImageView.h */,
 				34D8B7E319EAFF5E00C1FCF2 /* SMQuadImageView.m */,
 				34B8D1F319E586DA00C9141B /* Images.xcassets */,
+				34E10EE119EDC3EF005C3F26 /* ImageIcon-58.png */,
+				34E10EDF19EDC37B005C3F26 /* imageIcon.jpg */,
 				34B8D1F519E586DA00C9141B /* LaunchScreen.xib */,
 				34B8D1E619E586DA00C9141B /* Supporting Files */,
 			);
@@ -242,7 +291,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 34B8D1DE19E586DA00C9141B /* Build configuration list for PBXProject "pennStateApp" */;
+			buildConfigurationList = 34B8D1DE19E586DA00C9141B /* Build configuration list for PBXProject "Course Companion" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -268,8 +317,11 @@
 			files = (
 				34D8B7DE19EAFA8600C1FCF2 /* Zeinab-GDNet-article.jpg in Resources */,
 				34D8B7DB19EAFA8600C1FCF2 /* shield.png in Resources */,
+				34D8B7F619EC687D00C1FCF2 /* quad3.png in Resources */,
 				34B8D1F219E586DA00C9141B /* Main.storyboard in Resources */,
+				34D8B7F419EC687D00C1FCF2 /* quad-2.png in Resources */,
 				34D8B7D319EAFA8600C1FCF2 /* blue background.jpg in Resources */,
+				34E10EDC19ED7DDC005C3F26 /* Tutorials.plist in Resources */,
 				34D8B7D419EAFA8600C1FCF2 /* lightGreenSquare.gif in Resources */,
 				34D8B7D819EAFA8600C1FCF2 /* Screen Shot 2014-10-07 at 1.32.54 PM.png in Resources */,
 				34D8B7D619EAFA8600C1FCF2 /* red.png in Resources */,
@@ -279,10 +331,16 @@
 				34D8B7DA19EAFA8600C1FCF2 /* Screen Shot 2014-10-07 at 2.52.00 PM.png in Resources */,
 				34B8D1F719E586DA00C9141B /* LaunchScreen.xib in Resources */,
 				34D8B7DC19EAFA8600C1FCF2 /* video-256x256.png in Resources */,
+				34E10EDE19EDA5DC005C3F26 /* CorporateResources.plist in Resources */,
+				34D8B7F519EC687D00C1FCF2 /* quad1.png in Resources */,
 				34D8B7D719EAFA8600C1FCF2 /* return-of-video-to-elearning.jpg in Resources */,
 				34D8B7D519EAFA8600C1FCF2 /* NittanyLionJumpItsYourTimeSign.jpg in Resources */,
+				34E10EE219EDC3EF005C3F26 /* ImageIcon-58.png in Resources */,
 				34B8D1F419E586DA00C9141B /* Images.xcassets in Resources */,
 				34D8B7D219EAFA8600C1FCF2 /* black-background-wallpaper-1.jpg in Resources */,
+				34D8B7F719EC687D00C1FCF2 /* quad4.png in Resources */,
+				34D8B7EF19EC5E4300C1FCF2 /* windows-media-player-play-button-hi.png in Resources */,
+				34E10EE019EDC37B005C3F26 /* imageIcon.jpg in Resources */,
 				34D8B7D019EAFA8600C1FCF2 /* 228MG0380.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +361,9 @@
 			files = (
 				34B8D1EF19E586DA00C9141B /* ViewController.m in Sources */,
 				34D8B7E719EB084700C1FCF2 /* SMTable.m in Sources */,
+				34E10EDA19EC6FCE005C3F26 /* SMPDFViewer.m in Sources */,
 				34D8B7E419EAFF5E00C1FCF2 /* SMQuadImageView.m in Sources */,
+				349B7D4819EEC8190083EB5A /* SMStartPage.m in Sources */,
 				34B8D1EC19E586DA00C9141B /* AppDelegate.m in Sources */,
 				34B8D1E919E586DA00C9141B /* main.m in Sources */,
 			);
@@ -430,7 +490,7 @@
 				INFOPLIST_FILE = pennStateApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pennStateApp;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -442,7 +502,7 @@
 				INFOPLIST_FILE = pennStateApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pennStateApp;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
@@ -461,7 +521,7 @@
 				);
 				INFOPLIST_FILE = pennStateAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pennStateAppTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pennStateApp.app/pennStateApp";
 			};
 			name = Debug;
@@ -476,7 +536,7 @@
 				);
 				INFOPLIST_FILE = pennStateAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pennStateAppTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pennStateApp.app/pennStateApp";
 			};
 			name = Release;
@@ -484,7 +544,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		34B8D1DE19E586DA00C9141B /* Build configuration list for PBXProject "pennStateApp" */ = {
+		34B8D1DE19E586DA00C9141B /* Build configuration list for PBXProject "Course Companion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34B8D20419E586DA00C9141B /* Debug */,

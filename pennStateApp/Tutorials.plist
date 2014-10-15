@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Chapter 1: Intro To Xcode</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/Intro%20To%20Xcode/prog_index.m3u8</string>
+	</dict>
+	<dict>
+		<key>Chapter 2: Outlets and Actions</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/Outlets%20and%20Actions/prog_index.m3u8</string>
+	</dict>
+	<dict>
+		<key>Chapter 3: Intro To Autolayout</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/Intro%20To%20Auto%20Layout/prog_index.m3u8</string>
+	</dict>
+	<dict>
+		<key>Chapter 4: Storyboards and Segueways</key>
+		<string>http://www.softwaremerchant.com/CourseCompanion/Storyboards%20and%20Segueways/prog_index.m3u8</string>
+	</dict>
+</array>
+</plist>
