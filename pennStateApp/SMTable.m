@@ -159,7 +159,17 @@
         mpc.controlStyle = MPMovieControlStyleFullscreen;
         mpc.fullscreen = YES;
     }
-    pdfURL = [NSURL URLWithString:corporateDict[tableArray[indexPath.row]]];
+    else if([self.navigationItem.title isEqualToString:@"Corporate Resources"]){
+        int offset = 0;
+        for(int i=0;i<indexPath.section;i++){
+            NSNumber *num = sectionCounts[i];
+            offset = offset + [num intValue];
+        }
+        pdfURL = [NSURL URLWithString:corporateDict[tableArray[indexPath.row+offset]]];
+    }
+    else{
+        pdfURL = [NSURL URLWithString:corporateDict[tableArray[indexPath.row]]];
+    }
     destination.url = pdfURL;
 }
 

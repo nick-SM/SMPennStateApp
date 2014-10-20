@@ -14,14 +14,14 @@
 		<key>Annotated Wire-Frame</key>
 		<string>http://www.softwaremerchant.com/CourseCompanion/Annotated%20WireFrame%20SM.pdf</string>
 		<key>Home Page Use-Case</key>
-		<string>http://www.softwaremerchant.com/CourseCompanion/BoeingAeroMagazineCasestudy.pdf</string>
+		<string>http://www.softwaremerchant.com/CourseCompanion/homepage-usecase.pdf</string>
 	</dict>
 	<key>Sample Case Studies</key>
 	<dict>
 		<key>T-Mobile Tapestry</key>
 		<string>http://www.softwaremerchant.com/CourseCompanion/TMobileTapestry.pdf</string>
 		<key>Boeing Aero Magazine</key>
-		<string>http://www.softwaremerchant.com/CourseCompanion/homepage-usecase.pdf</string>
+		<string>http://www.softwaremerchant.com/CourseCompanion/BoeingAeroMagazineCasestudy.pdf</string>
 	</dict>
 	<key>Sample Agile Sprint Documentation</key>
 	<dict>
